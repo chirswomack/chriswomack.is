@@ -4,13 +4,13 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="h-screen flex flex-col justify-center items-center">
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="flex flex-col justify-center items-center py-20 flex-grow">
         <Header title="Welcome to my app!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
