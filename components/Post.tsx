@@ -5,7 +5,7 @@ import Markdown from './markdown';
 export default function Post({ title, date, content }) {
     return (
         <>
-        <Head>
+            <Head>
                 <title>{title}</title>
             </Head>
             <article>
