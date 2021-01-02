@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
-import ArticlePreview from '@components/articlePreview';
+import PostPreview from '@components/PostPreview';
 
 export default function Admin() {
   useEffect(() => {
     (async () => {
       const CMS = (await import('netlify-cms-app')).default;
       CMS.init();
-      CMS.registerPreviewTemplate('article', ArticlePreview);
+      CMS.registerPreviewTemplate('posts', PostPreview);
     })();
   }, []);
 

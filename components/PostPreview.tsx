@@ -1,6 +1,6 @@
 import Post from '../pages/writing/[id]';
 
-export default function ArticlePreview({ entry }) {
+export default function PostPreview({ entry }) {
     const title = entry.getIn(['data', 'title']);
     const date = entry.getIn(['data', 'date']);
     const body = entry.getIn(['data', 'body']);
