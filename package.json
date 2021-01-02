@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "generate-admin-css": "npx tailwindcss build styles/global.css -o public/admin/main.css",
+    "export": "pnpm generate-admin-css && pnpm build && next export"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
