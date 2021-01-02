@@ -8,7 +8,7 @@ export default function Post({ title, date, content }) {
             <Head>
                 <title>{title}</title>
             </Head>
-            <article>
+            <article className="cooper-hewitt">
                 <h1 className="text-3xl my-4 mx-0 font-bold">{title}</h1>
                 <div className="text-gray-500">
                     <Date dateString={date} />
