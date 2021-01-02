@@ -9,7 +9,7 @@ export default function Admin() {
     (async () => {
       const CMS = (await import('netlify-cms-app')).default;
       CMS.init();
-      CMS.registerPreviewStyle("/global.css");
+      CMS.registerPreviewStyle("/styles/global.css");
       CMS.registerPreviewTemplate('posts', PostPreview);
     })();
   }, []);
