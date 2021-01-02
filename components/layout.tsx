@@ -4,7 +4,7 @@ import Link from 'next/link'
 const name = 'Chris Womack'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home = false }) {
   return (
     <div className="max-w-xl px-4 mt-12 mb-24 mx-auto cooper-hewitt">
       <Head>

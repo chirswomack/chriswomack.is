@@ -1,5 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
 import Layout, { siteTitle } from '@components/layout';
+import Date from '@components/date';
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
@@ -16,6 +19,7 @@ export default function Home({ allPostsData }) {
     <Layout home={true}>
       <Head>
         <title>{siteTitle}</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <section className="text-xl">
         <p>Hello, I'm <b>Chris</b>. I'm a software engineer and writer. Welcome to my website.</p>
@@ -29,11 +33,13 @@ export default function Home({ allPostsData }) {
         <ul className="p-0 m-0 list-none">
           {allPostsData.map(({ id, date, title }) => (
             <li className="mb-5 mt-0 mx-0" key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className="text-gray-500">
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
