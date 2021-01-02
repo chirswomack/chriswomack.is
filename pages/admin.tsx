@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import Head from 'next/head';
+
 import PostPreview from '@components/PostPreview';
 
 export default function Admin() {
@@ -12,5 +14,12 @@ export default function Admin() {
     })();
   }, []);
 
-  return <div />;
+  return (
+    <>
+        <Head>
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        </Head>
+        <div />
+    </>
+  );
 }
