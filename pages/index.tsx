@@ -27,12 +27,13 @@ export default function Home({ allPostsData }) {
                 <div className="max-w-prose">
                     <p className="mb-4">Hi, I'm Chris Womack. I'm a software engineer and writer. Welcome to my website.</p>
                     <p>
-                        You're here early! Stay tuned for more content in the coming weeks.
+                        (This is a sample website - you’ll be building a site like this on{' '}
+                        <a href="https://nextjs.org/learn" className="text-link-dark">our Next.js tutorial</a>.)
                     </p>
                 </div>
                 <img className="h-48 w-48 mx-6 self-center -mt-6 md:block hidden" src="/images/profile-nobg.png" />
             </section>
-            <section className="text-xl p-px hidden">
+            <section className="text-xl p-px">
                 <h2 className="mt-10 mb-9 leading-snug text-3xl font-black opacity-75">Articles</h2>
                 <ul className="p-0 m-0 list-none">
                     {allPostsData.map(({ id, date, title }) => (
