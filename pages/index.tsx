@@ -23,12 +23,12 @@ export default function Home({ allPostsData }) {
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <Logo classNames="absolute left-8 top-8 h-12" />
-            <section className="text-xl font-medium flex flex-row dark:bg-black dark:bg-opacity-50 bg-violet-lightest bg-opacity-25 rounded rounded-lg py-6 px-8 md:pb-0">
+            <section className="text-xl font-medium flex flex-row dark:bg-black dark:bg-opacity-50 text-purple-lightest bg-dark rounded rounded-lg py-6 px-8 md:pb-0">
                 <div className="max-w-prose">
                     <p className="mb-4">Hi, I'm Chris Womack. I'm a software engineer and writer. Welcome to my website.</p>
                     <p>
                         (This is a sample website - you’ll be building a site like this on{' '}
-                        <a href="https://nextjs.org/learn" className="text-link dark:text-link-dark">our Next.js tutorial</a>.)
+                        <a href="https://nextjs.org/learn" className="text-link-dark">our Next.js tutorial</a>.)
                     </p>
                 </div>
                 <img className="h-48 w-48 mx-6 self-center -mt-6 md:block hidden" src="/images/profile-nobg.png" />
