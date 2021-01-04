@@ -18,7 +18,7 @@ export default function Markdown({ markdown }) {
     .processSync(markdown).result;
 
   return (
-    <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+    <div>
       {content}
     </div>
   );

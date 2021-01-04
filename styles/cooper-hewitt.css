@@ -54,6 +54,17 @@
         url('/fonts/cooper-hewitt/CooperHewitt-Bold.tff') format('truetype')
 }
 
+@font-face {
+    font-family: 'Cooper Hewitt';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/cooper-hewitt/CooperHewitt-Heavy.eot');
+    src: url('/fonts/cooper-hewitt/CooperHewitt-Heavy.svg'),
+        url('/fonts/cooper-hewitt/CooperHewitt-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cooper-hewitt/CooperHewitt-Heavy.woff') format('woff'),
+        url('/fonts/cooper-hewitt/CooperHewitt-Heavy.tff') format('truetype')
+}
+
 /* Italic */
 @font-face {
     font-family: 'Cooper Hewitt';

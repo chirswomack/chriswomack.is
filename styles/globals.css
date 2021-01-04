@@ -4,7 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply bg-light;
+        @apply text-gray-900;
+        @apply dark:bg-dark;
+        @apply dark:text-purple-lightest;
+    }
+
+    a {
+        @apply hover:underline;
+    }
+}
+
 .cooper-hewitt {
     font-family: 'Cooper Hewitt', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#menu-toggle:checked + label #menu-icon {
+    display: none;
+}
+
+#menu-toggle:checked + label #close-icon {
+    display: inline;
+}
+
+#menu-toggle:checked ~ #menu {
+    display: block;
 }

@@ -1,6 +1,7 @@
 dependencies:
   '@tailwindcss/typography': 0.3.1_tailwindcss@2.0.2
   autoprefixer: 10.1.0_postcss@8.2.2
+  classnames: 2.2.6
   date-fns: 2.16.1
   gray-matter: 4.0.2
   netlify-cms-app: 2.14.8_4695a47c40ef995f48f8c834d2fb82ec
@@ -14,6 +15,7 @@ dependencies:
   tailwindcss: 2.0.2_af0f84ec51438f8ab9d26470b52a2535
   unified: 9.2.0
 devDependencies:
+  '@types/classnames': 2.2.11
   '@types/node': 14.14.16
   '@types/react': 17.0.0
   lodash: 4.17.20
@@ -392,6 +394,10 @@ packages:
       tailwindcss: 2.0.0-alpha.24 || ^2.0.0
     resolution:
       integrity: sha512-HyZ+3Eay8SGaPq7kcFoANZLr4EjeXQ19yjjb9fp6B0PHHpvZoe00jdsnpnooMEbx9J5rQ93nxPUG3MQmXVxGMQ==
+  /@types/classnames/2.2.11:
+    dev: true
+    resolution:
+      integrity: sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
   /@types/hoist-non-react-statics/3.3.1:
     dependencies:
       '@types/react': 17.0.0
@@ -7867,9 +7873,11 @@ packages:
       integrity: sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
 specifiers:
   '@tailwindcss/typography': ^0.3.1
+  '@types/classnames': ^2.2.11
   '@types/node': ^14.14.16
   '@types/react': ^17.0.0
   autoprefixer: ^10.1.0
+  classnames: ^2.2.6
   date-fns: ^2.16.1
   gray-matter: ^4.0.2
   lodash: ^4.17.20

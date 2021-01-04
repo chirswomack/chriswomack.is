@@ -8,9 +8,9 @@ export default function Post({ title, date, content }) {
             <Head>
                 <title>{title}</title>
             </Head>
-            <article className="cooper-hewitt">
-                <h1 className="text-3xl my-4 mx-0 font-bold">{title}</h1>
-                <div className="text-gray-500">
+            <article className="cooper-hewitt prose dark:prose-dark lg:prose-lg xl:prose-xl max-w-none md:px-4">
+                <h1 className="opacity-75">{title}</h1>
+                <div className="opacity-50 -mt-6 font-medium">
                     <Date dateString={date} />
                 </div>
                 <Markdown markdown={content} />
