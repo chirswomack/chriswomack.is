@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import DarkModeToggle from './darkModeToggle'
 import Navbar from './Navbar'
 
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Chris Womack'
 
 export default function Layout({ children, home = false }) {
     return (
