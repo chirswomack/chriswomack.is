@@ -15,9 +15,9 @@ export default function DarkModeToggle() {
     };
 
     useEffect(() => {
-        if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-          localStorage.theme = 'light';
-          document.querySelector('html').classList.remove('dark');
+        if (localStorage.theme !== 'light') {
+          localStorage.theme = 'dark';
+          document.querySelector('html').classList.add('dark');
           setDarkMode(true);
         }
       }, [])
